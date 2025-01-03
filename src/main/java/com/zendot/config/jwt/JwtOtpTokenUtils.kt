@@ -1,5 +1,4 @@
-package football.interkashi.dashboard.config.auth.jwt
-
+package com.zendot.config.jwt
 
 import com.zendot.otp.model.ZenOtpUser
 import io.jsonwebtoken.Claims

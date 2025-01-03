@@ -23,7 +23,7 @@ class JwtOtpTokenUtils(
 ) {
 
     fun generateOtpToken(user: ZenOtpUser): String = Jwts.builder()
-        .claim("username", user.phoneNo)
+        .claim("phoneNo", user.phoneNo)
         .claim("authType","otp")
         .subject(user.id)
         .id(UUID.randomUUID().toString())

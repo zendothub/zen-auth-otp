@@ -128,5 +128,10 @@
             </plugin>
         </plugins>
     </build>
-
+    <distributionManagement>
+        <repository>
+            <id>zen-auth-otp</id>
+            <url>https://maven.pkg.github.com/zendothub/zen-auth-otp</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -9,8 +9,9 @@ import com.zendot.otp.model.OtpRequest
 import com.zendot.otp.model.ZenOtpUser
 import com.zendot.otp.repository.OtpRequestRepository
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.stereotype.Service
 import java.util.*
-
+@Service
 class OtpServiceImpl(val otpRequestRepository: OtpRequestRepository, private val otpAuthService: OtpAuthService,
                      @Value("\${interkashi.otp.oppless.clientid}") otpLessClientId: String,
                      @Value("\${interkashi.otp.oppless.clientsecret}") otpLessClientSecret: String,):OtpService {

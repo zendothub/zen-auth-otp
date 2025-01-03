@@ -3,7 +3,9 @@ package com.zendot.otp.service
 import com.zendot.auth.model.ZenUser
 import com.zendot.auth.service.AuthService
 import com.zendot.otp.model.ZenOtpUser
+import org.springframework.stereotype.Service
 
+@Service
 class OtpAuthService(private val otpServiceV2: OtpServiceV2) : AuthService {
     override fun findUserOrCreate(credentials: Map<String, Any>): ZenUser {
         val phoneNo = credentials["phoneNo"] as? String
